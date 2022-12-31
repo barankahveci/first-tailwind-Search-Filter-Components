@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/output.css">
+</head>
+<style>
+    :checked + .text {
+              background-color: #303236;
+              color: #2CCDEA;
+            transition: all 0.3s;}
+    :checked + .text1 {
+              background-color: #303236;
+              color: #2CCDEA;
+              transition: all 0.3s}
+    :checked + .text2 {
+              background-color: #303236;
+              color: #2CCDEA;
+              transition: all 0.3s;}
+
+</style>
+
+<body class="bg-arkaplan">
+    <article class="m-4">
+        <section class=" shadow rounded-xl w-96 h-96 bg-kutular px-12 py-10 ">
+            <div class="relative">
+                <svg class="w-6 h-6 absolute top-3 text-silik left-2" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+                <input class="w-72 h-12 px-10 rounded bg-arkaplan text-white " placeholder="Start typing to search" type="search"
+                    name="" id="">
+                <div class="mt-6">
+                    <h2 class="text-white mb-4">POPULAR SEARCHES</h2>
+                    <ul class="headerul">
+                        <li class="headerli">Air Transport</li>
+                        <li class="headerli">Aviation</li>
+                        <li class="cursor-pointer text-hover">Mekaniske Verksted</li>
+                        <li class="headerli">Port Authority</li>
+                        <li class="headerli">Sporvei</li>
+                        <li class="headerli">Bergens Kreditbank</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="shadow rounded-lg w-4/12 h-16 mt-5 bg-kutular flex items-center">
+            <div class="flex relative">
+                <svg class="w-6 h-6  absolute text-silik left-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+                <input class="pl-10 w-[21rem] border-none outline-none  bg-kutular text-white" placeholder="Start typing to search"
+                    type="search" name="" id="">
+            </div>
+            <ul class="flex">
+                <li class=" text-white cursor-pointer ">
+                    <label class="transition-all p-" for="test">
+                        <input class="hidden " type="radio" name="type" value="project" id="test">
+                        <span class="text p-3 px-4 rounded-full cursor-pointer">Projects</span>
+                    </label>
+                </li>
+                <li class=" text-white cursor-pointer"><label class=" p-" for="test1">
+                    <input class="hidden " type="radio" name="type" value="project" id="test1">
+                    <span class="text1 p-3 px-4 rounded-full cursor-pointer">Images</span>
+                </label></li>
+                <li class=" text-white cursor-pointer"><label class=" p-" for="test2">
+                    <input class="hidden " type="radio" name="type" value="project" id="test2">
+                    <span class="text1 p-3 px-4 rounded-full cursor-pointer">People</span>
+                </label></li></li>
+            </ul>
+        </section>
+        <section class=" shadow rounded-xl w-3/12 h-80 bg-kutular mt-5 px-12 py-10">
+            <div class="flex gap-x-10 items-center">
+                <h6 class="text-white">Country</h6>
+                <div>
+                    <select class="w-64 h-12 pl-2 bg-arkaplan border-none rounded focus:outline-none text-white" name="" id="">
+                        <option value="Norway">Norway</option>
+                        <option value="Turkey">Turkey</option>
+                    </select>
+            </div>
+            </div>
+            <div class="flex gap-x-[4.4rem] items-center mt-5 border-b pb-10 border-arkaplan">
+                <h6 class="text-white">City</h6>
+                <input type="text" class="w-64 h-12 pl-2 text-white bg-arkaplan border-none rounded focus:outline-none" value="Oslo">
+            </div>
+            <div class="flex items-center justify-between mt-7">
+                <p class="text-silik cursor-pointer hover:text-white">Cancel</p>
+                <button class="bg-hover p-4 px-7 text-white rounded-full">Apply Filters</button>
+            </div>
+        </section>
+    </article>
+</body>
+
+</html>
